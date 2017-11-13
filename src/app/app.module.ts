@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './components/movies/movies.component';
+import { HttpModule, JsonpModule } from '@angular/http';
 
 
 @NgModule({
@@ -12,7 +13,9 @@ import { MoviesComponent } from './components/movies/movies.component';
     MoviesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    JsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
